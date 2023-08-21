@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .button-link:hover {
+            background-color: #0056b3;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ user.name }}!</h1>
+        <p>
+            <u>Your details</u><br><br>
+            Date of Birth: {{ user.dob }}<br><br>
+            Age: {{ user.age }} yrs<br><br>
+            Phone Number: {{ user.ph }}<br><br>
+            Email: {{ user.email }}<br><br>
+            About: {{ user.about }}
+        </p>
+
+        <div id="email_div" class="text-center">
+            <a href="send_otp/" class="button-link">Send OTP</a>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

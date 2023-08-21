@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Detail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>User Detail {{user.userid}} !!!</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Name:</strong> {{ user.name }}</p>
+                <p><strong>Date of Birth:</strong> {{ user.dob }}</p>
+                <p><strong>Age:</strong> {{ user.age }} yrs</p>
+                <p><strong>Phone:</strong> {{ user.ph }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <p><strong>About:</strong> {{ user.about }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
